@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  color: var(--brand-secondary-color) !important; /* Or any Tailwind-compatible color */
+  z-index: 50;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: var(--brand-label-color) !important; /* Icon color */
+  font-size: 24px;
+}

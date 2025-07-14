@@ -1,0 +1,23 @@
+.topBar {
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a+a{
+        margin-left: 1rem;
+    }
+}
+
+.logo {
+    align-self: flex-start;
+    height: auto;
+    width: 150px;
+}
